@@ -37,6 +37,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.sf.disable_hwc_vds=1 \
     debug.sf.latch_unsignaled=1 \
+    debug.cpurend.vsync=false \
     ro.surface_flinger.has_HDR_display=true \
     ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
