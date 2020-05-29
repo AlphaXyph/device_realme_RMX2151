@@ -78,7 +78,8 @@ PRODUCT_PACKAGES += \
     fstab.mt6785 \
     init.ago.rc \
     fstab.enableswap \
-    init.devicesetting.rc 
+    init.devicesetting.rc \ 
+    init.safailnet.rc
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
