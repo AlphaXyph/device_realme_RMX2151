@@ -18,6 +18,11 @@ on post-fs
     #  so it is fine to just revert back)
     umount /vendor/etc/fstab.mt6785
 
+on late-fs
+
+on property:init.svc.face_hal=restarting
+    stop face_hal
+
 on post-fs-data
     # VideoCodec
     chmod 0666 /dev/video0
