@@ -53,11 +53,17 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_OTG_SWITCH = "otg";
     public static final String KEY_GAME_SWITCH = "game";
 
+    private static final String KEY_CATEGORY_REFRESH = "refresh";
+    public static final String KEY_REFRESH_RATE = "refresh_rate";
+    public static final String KEY_AUTO_REFRESH_RATE = "auto_refresh_rate";
+
     public static final String KEY_SETTINGS_PREFIX = "device_setting_";
 
     private static TwoStatePreference mSRGBModeSwitch;
     private static TwoStatePreference mOTGModeSwitch;
     private static TwoStatePreference mGameModeSwitch;
+    private static TwoStatePreference mRefreshRate;
+    private static SwitchPreference mAutoRefreshRate;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -79,10 +85,23 @@ public class DeviceSettings extends PreferenceFragment
         mGameModeSwitch.setEnabled(GameModeSwitch.isSupported());
         mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
         mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch());
+        
+        mAutoRefreshRate = (SwitchPreference) findPreference(KEY_AUTO_REFRESH_RATE);
+        mAutoRefreshRate.setChecked(AutoRefreshRateSwitch.isCurrentlyEnabled(this.getContext()));
+        mAutoRefreshRate.setOnPreferenceChangeListener(new AutoRefreshRateSwitch(getContext()));
+
+        mRefreshRate = (TwoStatePreference) findPreference(KEY_REFRESH_RATE);
+        mRefreshRate.setEnabled(!AutoRefreshRateSwitch.isCurrentlyEnabled(this.getContext()));
+        mRefreshRate.setChecked(RefreshRateSwitch.isCurrentlyEnabled(this.getContext()));
+        mRefreshRate.setOnPreferenceChangeListener(new RefreshRateSwitch(getContext()));
+
     }
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mAutoRefreshRate) {
+              mRefreshRate.setEnabled(!AutoRefreshRateSwitch.isCurrentlyEnabled(this.getContext()));
+        }
         return super.onPreferenceTreeClick(preference);
     }
 

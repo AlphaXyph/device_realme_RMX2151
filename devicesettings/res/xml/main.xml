@@ -12,6 +12,31 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
+        android:key="refresh"
+        android:title="@string/refresh_title">
+
+        <SwitchPreference
+            android:key="auto_refresh_rate"
+            android:icon="@drawable/ic_auto_refresh_icon"
+            android:summary="@string/auto_refresh_rate_summary"
+            android:title="@string/auto_refresh_rate_title"
+            android:persistent="true" />
+
+        <SwitchPreference
+            android:key="refresh_rate"
+            android:icon="@drawable/ic_forced_refresh_icon"
+            android:summary="@string/refresh_rate_summary"
+            android:title="@string/refresh_rate_title"
+            android:persistent="false" />
+
+        <Preference
+            android:icon="@drawable/ic_info_outline_24dp"
+            android:persistent="false"
+            android:summary="@string/refresh_rate_warning" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="graphics"
         android:title="@string/display_title">
 
