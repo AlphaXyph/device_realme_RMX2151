@@ -25,12 +25,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/realme/RMX2001/RMX2001-vendor.mk)
 
-# IMS
-$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
-
-PRODUCT_SHIPPING_API_LEVEL := 29
-
 # VNDK
+PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Dynamic Partition
@@ -115,18 +111,6 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_showlogo
-
-# Telephony
-PRODUCT_PACKAGES += vendor.mediatek.hardware.videotelephony@1.0
-
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
