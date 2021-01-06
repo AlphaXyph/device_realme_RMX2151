@@ -21,11 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2001/device.mk)
 
-# Inherit some common PEX stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Octavi OS stuff.
+$(call inherit-product, vendor/octavi/config/common.mk)
+TARGET_GAPPS_ARCH := arm64
+OCTAVI_DEVICE_MAINTAINER := ashuk1109
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_RMX2001
+PRODUCT_NAME := octavi_RMX2001
 PRODUCT_DEVICE := RMX2001
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme G90T Series
