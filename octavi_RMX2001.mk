@@ -24,6 +24,7 @@ $(call inherit-product, device/realme/RMX2001/device.mk)
 # Inherit some common Octavi OS stuff.
 $(call inherit-product, vendor/octavi/config/common.mk)
 TARGET_GAPPS_ARCH := arm64
+OCTAVI_BUILD_TYPE := OFFICIAL
 OCTAVI_DEVICE_MAINTAINER := ashuk1109
 
 # Device identifier. This must come after all inclusions.
