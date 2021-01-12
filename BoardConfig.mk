@@ -34,6 +34,10 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 # Assertation
 TARGET_OTA_ASSERT_DEVICE := RMX2001,wasabi
 
+# Board Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_rmx2001
+TARGET_RECOVERY_DEVICE_MODULES := libinit_rmx2001
+
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag

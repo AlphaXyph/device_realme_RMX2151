@@ -35,13 +35,5 @@ PRODUCT_MODEL := Realme G90T Series
 PRODUCT_MANUFACTURER := realme
 
 # Build info
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys"
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=RMX2001 \
-    PRODUCT_NAME=RMX2001 \
-    PRIVATE_BUILD_DESC="full_oppo6785-user 10 QP1A.190711.020 0b36b6c4f9b3bf3b release-keys"
-
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
