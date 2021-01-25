@@ -47,7 +47,8 @@ void load_rmx2001() {
     property_override("ro.product.system.model", "RMX2001");
     property_override("ro.build.product", "RMX2001");
     property_override("ro.product.device", "RMX2001");
-    property_override("ro.build.description", "redfin-user 11 RQ1A.210105.003 7005429 release-keys");
+    property_override("ro.build.description", "full_oppo6785-user 10 QP1A.190711.020 0b36b6c4f9b3bf3b release-keys");
+    property_override("ro.build.fingerprint", "google/sunfish/sunfish:11/RQ1A.210105.002/6985033:user/release-keys");
 }
 
 void vendor_load_properties() {
@@ -55,6 +56,4 @@ void vendor_load_properties() {
     load_rmx2001();
 
     property_override("ro.oem_unlock_supported", "0");
-    property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
-        "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys");
 }
