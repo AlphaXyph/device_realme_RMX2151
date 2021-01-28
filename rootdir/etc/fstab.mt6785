@@ -6,11 +6,12 @@
 # Core Partitions (Dynamic Partitions)
 system                                           /system               ext4    ro                                                  wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
 vendor                                           /vendor               ext4    ro                                                  wait,avb,logical,first_stage_mount
+product                                          /product              ext4    ro                                                  wait,logical,first_stage_mount
 
 # Core Partitions
 /dev/block/platform/bootdevice/by-name/md_udc    /metadata             ext4    noatime,nosuid,nodev,discard                        wait,formattable,first_stage_mount
 /dev/block/platform/bootdevice/by-name/cache     /cache                ext4    noatime,nosuid,nodev,noauto_da_alloc,discard        wait,check,formattable
-/dev/block/platform/bootdevice/by-name/userdata /data                  ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic,discard latemount,wait,check,formattable,quota,reservedsize=128m,resize,checkpoint=block,fileencryption=aes-256-xts
+/dev/block/platform/bootdevice/by-name/userdata /data                  ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt latemount,wait,check,formattable,quota,reservedsize=128m,checkpoint=block,fileencryption=aes-256-xts
 /dev/block/platform/bootdevice/by-name/recovery  /recovery             emmc    defaults                                            first_stage_mount,nofail
 /dev/block/platform/bootdevice/by-name/boot      /boot                 emmc    defaults                                            first_stage_mount,nofail
 /dev/block/platform/bootdevice/by-name/dtbo      /dtbo                 emmc    defaults                                            defaults
@@ -21,7 +22,7 @@ vendor                                           /vendor               ext4    r
 
 # External-Devices (SDCARD | OTG)
 /devices/platform/externdevice*                  auto                  auto    defaults                                            voldmanaged=sdcard1:auto
-/devices/platform/11200000.usb3_xhci*            auto                  vfat    defaults                                            voldmanaged=usbotg:auto
+/devices/platform/usb3_xhci*                     auto                  vfat    defaults                                            voldmanaged=usbotg:auto
 
 # Factory Reset Protection (FRP)
 /dev/block/platform/bootdevice/by-name/frp       /persistent           emmc    defaults                                            defaults
@@ -78,3 +79,4 @@ vendor                                           /vendor               ext4    r
 /dev/block/platform/bootdevice/by-name/cam_vpu1  /cam_vpu1             emmc    defaults                                            defaults
 /dev/block/platform/bootdevice/by-name/cam_vpu2  /cam_vpu2             emmc    defaults                                            defaults
 /dev/block/platform/bootdevice/by-name/cam_vpu3  /cam_vpu3             emmc    defaults                                            defaults
+
