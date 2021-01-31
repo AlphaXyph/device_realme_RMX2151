@@ -1,4 +1,4 @@
-# All unpinned blobs are from RMX2001_11_B.53
+# All unpinned blobs are from RMX2151_11_C.01
 
 # APNs
 etc/apns-conf.xml:product/etc/apns-conf.xml
@@ -7,18 +7,64 @@ etc/apns-conf.xml:product/etc/apns-conf.xml
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
 
-# Charger - From Redmi/begonia/begonia:11/RP1A.200720.011/21.4.28:user/release-keys
-bin/charger:bin/chargeonlymode|bb74c36cee72b1f2e2c8090eb6f21352eba8e83f
+# Camera - from RMX2151_11_C.01
+vendor/lib64/libcameracustom.so:product/vendor_overlay/29/lib64/libcameracustom.so|f43b592672b43ff373b16292f3738dff2b355f3f
 
-# HotwordEnrollment - from RMX2151_11_C.01
--my_product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4.apk:product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk|ce1f391fcea52e0c48ee3afedb8d6ae52d214ae8
--my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar|714382db8d12aca9f5388dd72060e867e30d88e4
-my_product/etc/permissions/com.android.hotwordenrollment.common.util.xml:system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|d842a6539f8a9201b329898c07f69ef8a953ee6f
+# Media - from RMX2151_11_C.01
+vendor/lib/libdpframework.so:product/vendor_overlay/29/lib/libdpframework.so|67e2c26a727efbe7da159919957c6d9081ba21dc
+vendor/lib64/libdpframework.so:product/vendor_overlay/29/lib64/libdpframework.so|4c00f544f1764c796a916f2c8e7aae46d0d43e09
+
+# Media - from RMX2151_11_C.01
+vendor/lib/libvpud_vcodec.so:product/vendor_overlay/29/lib/libvpud_vcodec.so|a040fa35b7f4eef98197e2fded6fc71018408a8a
+
+# EngineerMode
+-priv-app/EngineerMode/EngineerMode.apk
+lib/libem_support_jni.so
+lib64/libem_support_jni.so
+
+# HotwordEnrollment
+-my_product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4.apk:system_ext/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
+-my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar
+my_product/etc/permissions/com.android.hotwordenrollment.common.util.xml:system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+
+# IMS
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+-framework/mediatek-ims-base.jar
+-framework/mediatek-ims-common.jar
+-framework/mediatek-telecom-common.jar
+-framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-common.jar
+-priv-app/ImsService/ImsService.apk
+bin/vtservice
+etc/init/init.vtservice.rc
+framework/mediatek-ims-extension-plugin.jar
+framework/mediatek-ims-legacy.jar
+lib/libcomutils.so
+lib/libimsma.so
+lib/libimsma_adapt.so
+lib/libimsma_rtp.so
+lib/libimsma_socketwrapper.so
+lib/libmtk_vt_service.so
+lib/libmtk_vt_wrapper.so
+lib/libmtkavenhancements.so
+lib/libmtkperf_client.so
+lib/libsignal.so
+lib/libsink.so
+lib/libsource.so
+lib/libvcodec_cap.so
+lib/libvcodec_capenc.so
+lib/libvt_avsync.so
+lib64/libmtk_vt_wrapper.so
+lib64/libmtkavenhancements.so
+lib64/libmtkperf_client.so
+lib64/libvcodec_cap.so
+lib64/libvcodec_capenc.so
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Kernel Power Off Charging (KPOC)
 bin/kpoc_charger
 etc/init/kpoc_charger.rc
 lib/libshowlogo.so
 
-# Media - from RMX2151PU_11_A.75
-vendor/lib/libvpud_vcodec.so:product/vendor_overlay/29/lib/libvpud_vcodec.so
