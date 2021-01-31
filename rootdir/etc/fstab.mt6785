@@ -7,6 +7,7 @@
 system                                           /system               ext4    ro                                                  wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
 vendor                                           /vendor               ext4    ro                                                  wait,avb,logical,first_stage_mount
 product                                          /product              ext4    ro                                                  wait,logical,first_stage_mount
+odm                                              /odm                  ext4    ro                                                  wait,logical,first_stage_mount
 
 # Core Partitions
 /dev/block/platform/bootdevice/by-name/md_udc    /metadata             ext4    noatime,nosuid,nodev,discard                        wait,formattable,first_stage_mount
