@@ -401,4 +401,13 @@
     <!-- Enable doze mode
          ComponentName of a dream to show whenever the system would otherwise have gone to sleep. -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+
+    <!-- Whether to enable doze always on -->
+    <bool name="config_enableDozeAlwaysOn">true</bool>
+
+    <!-- Whether device supports an alt. ambient display -->
+    <bool name="config_alt_ambient_display">true</bool>
+
+    <!-- Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">5</integer>
 </resources>

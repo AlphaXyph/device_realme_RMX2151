@@ -127,3 +127,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay    
+
+# Doze
+PRODUCT_PACKAGES += \
+    CustomDoze
