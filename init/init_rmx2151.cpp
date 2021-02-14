@@ -41,19 +41,19 @@ void property_override_multifp(char const buildfp[], char const systemfp[],
     property_override(vendorfp, value);
 }
 
-void load_rmx2001() {
-    property_override("ro.product.name", "RMX2001");
-    property_override("ro.product.model", "RMX2001");
-    property_override("ro.product.system.model", "RMX2001");
-    property_override("ro.build.product", "RMX2001");
-    property_override("ro.product.device", "RMX2001");
-    property_override("ro.build.description", "full_oppo6785-user 10 QP1A.190711.020 0b36b6c4f9b3bf3b release-keys");
+void load_rmx2151() {
+    property_override("ro.product.name", "RMX2151");
+    property_override("ro.product.model", "RMX2151");
+    property_override("ro.product.system.model", "RMX2151");
+    property_override("ro.build.product", "RMX2151");
+    property_override("ro.product.device", "RMX2151");
+    property_override("ro.build.description", "full_oppo6785-user 10 QP1A.190711.020 f98a4913a52475a1 release-keys");
     property_override("ro.build.fingerprint", "google/sunfish/sunfish:11/RQ1A.210205.004/7038034:user/release-keys");
 }
 
 void vendor_load_properties() {
 
-    load_rmx2001();
+    load_rmx2151();
 
     property_override("ro.oem_unlock_supported", "0");
 }

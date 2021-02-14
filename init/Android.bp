@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_rmx2001",
+    name: "libinit_rmx2151",
     recovery_available: true,
-    srcs: ["init_rmx2001.cpp"],
+    srcs: ["init_rmx2151.cpp"],
     whole_static_libs: ["libbase"],
     shared_libs: ["libbase"],
     include_dirs: [
