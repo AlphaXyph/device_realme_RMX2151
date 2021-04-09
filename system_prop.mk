@@ -49,3 +49,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1 \
     ro.sf.blurs_are_expensive=1
 
+# LMKD
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.lmk.psi_complete_stall_ms=150 \
+    ro.lmk.swap_free_low_percentage=20 \
+    ro.lmk.kill_timeout_ms=100
