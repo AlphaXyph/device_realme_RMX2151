@@ -499,4 +499,7 @@
          Off by default, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPUs. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
+	
+	<!-- Whether device has VOOC charging support -->
+    <bool name="config_hasVoocCharger">true</bool>
 </resources>
