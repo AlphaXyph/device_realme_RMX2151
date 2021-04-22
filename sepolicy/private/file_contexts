@@ -3,7 +3,7 @@
 
 # HALs
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.light@2\.0-service-mediatek u:object_r:hal_light_default_exec:s0
-/system/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.RMX2001 u:object_r:hal_fingerprint_RMX2001_exec:s0
+/system/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.RMX2151 u:object_r:hal_fingerprint_RMX2151_exec:s0
 # VoLTE
 /system/bin/vtservice           u:object_r:vtservice_exec:s0
 
