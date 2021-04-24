@@ -85,7 +85,8 @@ PRODUCT_PACKAGES += \
     init.ago.rc \
     fstab.enableswap \
     init.devicesetting.rc \
-    init.safailnet.rc
+    init.safailnet.rc \
+    perf_profile.sh
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
