@@ -15,3 +15,6 @@ bin/kpoc_charger
 etc/init/kpoc_charger.rc
 lib/libshowlogo.so
 
+# Media - from RMX2151PU_11_A.75
+vendor/lib/libvpud_vcodec.so:product/vendor_overlay/29/lib/libvpud_vcodec.so
+
