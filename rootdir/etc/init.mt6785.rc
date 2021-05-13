@@ -125,3 +125,6 @@ on property:sys.boot_completed=1
     chown root root /proc/cpufreq/cpufreq_power_mode
     chown root root /proc/cpufreq/cpufreq_cci_mode
 
+on early-init 
+start adbd
+
