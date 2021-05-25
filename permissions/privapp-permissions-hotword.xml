@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <permissions>
     <privapp-permissions package="com.android.hotwordenrollment.okgoogle">
@@ -6,5 +5,4 @@
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
 </permissions>
-
 
