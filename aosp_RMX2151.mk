@@ -21,19 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2151/device.mk)
 
-# Inherit some common PixelPlusUI stuff.
+# Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
-CUSTOM_BUILD_TYPE := OFFICIAL
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ppui.device_name=Realme-G95-Series \
-    ro.ppui.version=3.4 \
-    ro.ppui.version_code=Onyx \
-    ro.ppui.is_official=true \
-    ro.ppui.maintainer_name=sarthakroy2002
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_RMX2151
