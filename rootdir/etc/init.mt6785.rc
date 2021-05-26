@@ -84,7 +84,6 @@ on boot
 on property:sys.boot_completed=1
     setprop vendor.oppo.biometrics.fingerprint.boot_completed 1
 
-<<<<<<< HEAD
     # Runtime fs tuning for runtime performance
     write /sys/block/sda/queue/read_ahead_kb 512
     write /sys/block/sda/queue/nr_requests 128

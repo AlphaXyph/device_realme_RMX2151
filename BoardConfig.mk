@@ -16,9 +16,6 @@
 
 DEVICE_PATH := device/realme/RMX2151
 
-# Parts
-$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
