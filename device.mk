@@ -58,10 +58,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libldacBT_dec
 
-# Device Settings
-PRODUCT_PACKAGES += \
-    devicesettings
-
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -144,7 +140,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay    
-
-# Doze
-PRODUCT_PACKAGES += \
-    CustomDoze
