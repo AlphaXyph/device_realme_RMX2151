@@ -38,4 +38,7 @@
     <string name="config_batDesCap">/sys/class/power_supply/battery/charge_full_design</string>
     <string name="config_batCurCap">/sys/class/power_supply/battery/charge_full</string>
 
+    <!-- Whether to show a preference item for mobile plan -->
+    <bool name="config_show_mobile_plan">false</bool>
+ 
 </resources>
