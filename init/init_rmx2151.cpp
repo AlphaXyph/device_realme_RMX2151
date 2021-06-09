@@ -48,7 +48,7 @@ void load_rmx2151() {
     property_override("ro.build.product", "RMX2151");
     property_override("ro.product.device", "RMX2151");
     property_override("ro.build.description", "full_oppo6785-user 10 QP1A.190711.020 f98a4913a52475a1 release-keys");
-    property_override("ro.build.fingerprint", "google/sunfish/sunfish:11/RQ1A.210405.005/7181113:user/release-keys");
+    property_override("ro.build.fingerprint", "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys");
 }
 
 void vendor_load_properties() {
