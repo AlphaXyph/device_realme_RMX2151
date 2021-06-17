@@ -27,6 +27,12 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ppui.device_name=Realme-G95-Series \
+    ro.ppui.version=3.6 \
+    ro.ppui.version_code=Unicorn \
+    ro.ppui.is_official=true \
+    ro.ppui.maintainer_name=sauraj
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_RMX2151
