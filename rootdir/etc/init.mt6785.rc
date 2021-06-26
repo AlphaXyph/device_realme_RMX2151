@@ -1,5 +1,4 @@
 import /system/etc/init/init.ago.rc
-import /system/etc/init/init.devicesetting.rc
 import /vendor/etc/init/hw/init.safailnet.rc
 
 on init
