@@ -1,1 +1,6 @@
+allow gmscore_app mtk_hal_mms_hwservice:hwservice_manager { find };
+allow gmscore_app vendor_default_prop:file { open getattr map };
+allow gmscore_app adbd_prop:file { open getattr map };
+allow gmscore_app hal_memtrack_hwservice:hwservice_manager { find };
+
 permissive gmscore_app;
