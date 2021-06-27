@@ -29,3 +29,7 @@ allow perf_profile proc_gpufreq:file rw_file_perms;
 # /proc/ppm
 allow perf_profile proc_ppm:dir search;
 allow perf_profile proc_ppm:file rw_file_perms;
+
+# /proc/touchpanel
+allow perf_profile proc_tp:dir search;
+allow perf_profile proc_tp:file rw_file_perms;

@@ -83,6 +83,21 @@ on boot
 on property:sys.boot_completed=1
     setprop vendor.oppo.biometrics.fingerprint.boot_completed 1
 
+# Performance profiles
+on property:persist.perf_profile=0
+    exec - root -- /system/bin/perf_profile.sh 0
+
+on property:persist.perf_profile=1
+    exec - root -- /system/bin/perf_profile.sh 1
+
+on property:persist.perf_profile=2
+    exec - root -- /system/bin/perf_profile.sh 2
+
+on property:sys.boot_completed=1
+    chown root root /sys/module/ged/parameters/gx_force_cpu_boost
+    chown root root /proc/cpufreq/cpufreq_power_mode
+    chown root root /proc/cpufreq/cpufreq_cci_mode
+
     # Runtime fs tuning for runtime performance
     write /sys/block/sda/queue/read_ahead_kb 512
     write /sys/block/sda/queue/nr_requests 128
@@ -113,18 +128,7 @@ service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.s
 on property:vendor.ril.mtk=1
     stop vendor.ril-daemon
 
-# Performance profiles
-on property:perf_profile=1
-    exec - root -- /system/bin/perf_profile.sh 1
-
-on property:perf_profile=0
-    exec - root -- /system/bin/perf_profile.sh 0
-
-on property:sys.boot_completed=1
-    chown root root /sys/module/ged/parameters/gx_force_cpu_boost
-    chown root root /proc/cpufreq/cpufreq_power_mode
-    chown root root /proc/cpufreq/cpufreq_cci_mode
-
+# Enabled ADB on boot
 on early-init 
 start adbd
 
