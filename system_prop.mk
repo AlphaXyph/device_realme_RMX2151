@@ -78,6 +78,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
 
+# Iorap
+PRODUCT_PROPERTY_OVERRIDES += \
+   iorapd.perfetto.enable=true \
+   iorapd.readahead.enable=true
+
 # GBoard
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.kb_pad_port_b=1 \
