@@ -55,7 +55,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.lmk.psi_complete_stall_ms=150 \
     ro.lmk.swap_free_low_percentage=20 \
     ro.lmk.kill_timeout_ms=100
-	
+
 # Tweak the memory management of the device, enable more background apps.. etc..
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.fha_enable=true \
@@ -77,6 +77,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Privapp permissions whitelisting
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
+
+# Iorap
+PRODUCT_PROPERTY_OVERRIDES += \
+   iorapd.perfetto.enable=true \
+   iorapd.readahead.enable=true
 
 # GBoard
 PRODUCT_PROPERTY_OVERRIDES += \
