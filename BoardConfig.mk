@@ -53,6 +53,12 @@ TARGET_NO_BOOTLOADER := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
+# Charger
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
