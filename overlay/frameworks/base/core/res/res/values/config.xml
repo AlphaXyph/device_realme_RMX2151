@@ -405,6 +405,9 @@
          vendor fingerprint HAL implementations. -->
     <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
 
+    <!-- Screen off delay --> 
+    <integer name="config_screen_off_delay">0</integer>
+
     <!-- Flag indicating whether the surface flinger is inefficient
          at performing a blur.  Used by parts of the UI to turn off
          the blur effect where it isn't worth the performance hit.
