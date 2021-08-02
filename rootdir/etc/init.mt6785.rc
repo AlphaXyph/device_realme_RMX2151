@@ -83,6 +83,13 @@ on boot
 on property:sys.boot_completed=1
     setprop vendor.oppo.biometrics.fingerprint.boot_completed 1
 
+service charger /bin/chargeonlymode
+    class charger
+    critical
+    #seclabel u:r:charger:s0
+    group system graphics
+    seclabel u:r:healthd:s0
+
 # Performance profiles
 on property:persist.perf_profile=0
     exec - root -- /system/bin/perf_profile.sh 0

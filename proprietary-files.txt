@@ -7,6 +7,9 @@ etc/apns-conf.xml:product/etc/apns-conf.xml
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
 
+# Charger - From Redmi/begonia/begonia:11/RP1A.200720.011/21.4.28:user/release-keys
+bin/charger:bin/chargeonlymode|bb74c36cee72b1f2e2c8090eb6f21352eba8e83f
+
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
 
@@ -17,4 +20,3 @@ lib/libshowlogo.so
 
 # Media - from RMX2151PU_11_A.75
 vendor/lib/libvpud_vcodec.so:product/vendor_overlay/29/lib/libvpud_vcodec.so
-

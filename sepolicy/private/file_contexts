@@ -13,3 +13,6 @@
 
 # Misc
 /system/bin/perf_profile\.sh	u:object_r:perf_profile_exec:s0
+
+# Executables
+/system/bin/chargeonlymode                    u:object_r:charger_exec:s0
