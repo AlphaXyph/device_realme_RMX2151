@@ -157,6 +157,14 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0 \
+    android.hardware.usb@1.0.vendor \
+    android.hardware.usb@1.1 \
+    android.hardware.usb@1.1.vendor
+
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_showlogo
