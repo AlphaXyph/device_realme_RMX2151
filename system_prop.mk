@@ -21,6 +21,31 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# Iorap
+PRODUCT_PROPERTY_OVERRIDES += \
+   iorapd.perfetto.enable=true \
+   iorapd.readahead.enable=true
+
+# Memory Management
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.fha_enable=true \
+    ro.sys.fw.bg_apps_limit=32 \
+    ro.config.dha_cached_max=16 \
+    ro.config.dha_empty_max=42 \
+    ro.config.dha_empty_init=32 \
+    ro.config.dha_lmk_scale=0.545 \
+    ro.config.dha_th_rate=2.3 \
+    ro.config.sdha_apps_bg_max=64 \
+    ro.config.sdha_apps_bg_min=8
+
+# NFC
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sys.nfc.disPowerSave=1 \
+    persist.sys.nfc.default=on \
+    persist.sys.nfc.aid_overflow=true \
+    ro.product.cuptsm=OPPO|ESE|01|02 \
+    persist.sys.nfc.antenna_area=bottom
+
 # OMX
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
@@ -88,4 +113,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.kb_pad_port_b=1 \
     ro.com.google.ime.corner_key_r=35
-    
+
