@@ -4,16 +4,16 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
 
 # Dex2oat
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    dalvik.vm.dex2oat64.enabled=true \
-    dalvik.vm.image-dex2oat-filter=quicken \
-    dalvik.vm.image-dex2oat-threads=8 \
-    dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
-    dalvik.vm.dex2oat-filter=quicken \
-    dalvik.vm.dex2oat-threads=8 \
-    dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
-    dalvik.vm.boot-dex2oat-threads=8 \
-    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#    dalvik.vm.dex2oat64.enabled=true \
+#   dalvik.vm.image-dex2oat-filter=quicken \
+#   dalvik.vm.image-dex2oat-threads=8 \
+#   dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+#   dalvik.vm.dex2oat-filter=quicken \
+#   dalvik.vm.dex2oat-threads=8 \
+#   dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+#    dalvik.vm.boot-dex2oat-threads=8 \
+#    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 
 # IMS
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -78,10 +78,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.zram.periodic_wb_delay_hours=24
 
 # Blur
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.surface_flinger.supports_background_blur=1 \
-    ro.sf.blurs_are_expensive=1 \
-    persist.sys.sf.disable_blurs=1
+#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#    ro.surface_flinger.supports_background_blur=1 \
+#    ro.sf.blurs_are_expensive=1 \
+#    persist.sys.sf.disable_blurs=1
 
 # LMKD
 PRODUCT_PRODUCT_PROPERTIES += \
