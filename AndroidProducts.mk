@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX2151.mk
+    $(LOCAL_DIR)/octavi_RMX2151.mk
