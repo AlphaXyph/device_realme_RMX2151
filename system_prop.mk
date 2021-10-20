@@ -53,6 +53,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.product.cuptsm=OPPO|ESE|01|02 \
     persist.sys.nfc.antenna_area=bottom
 
+# Fingerprint
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    fingerprint.nocleanup=true
+
 # OMX
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
