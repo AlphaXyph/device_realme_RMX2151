@@ -10,8 +10,10 @@ lib64/libaptXHD_encoder.so
 # Charger - From Redmi/begonia/begonia:11/RP1A.200720.011/21.4.28:user/release-keys
 bin/charger:bin/chargeonlymode|bb74c36cee72b1f2e2c8090eb6f21352eba8e83f
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
+# HotwordEnrollment - from RMX2151_11_C.01
+-my_product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4.apk:product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk|ce1f391fcea52e0c48ee3afedb8d6ae52d214ae8
+-my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar|714382db8d12aca9f5388dd72060e867e30d88e4
+my_product/etc/permissions/com.android.hotwordenrollment.common.util.xml:system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|d842a6539f8a9201b329898c07f69ef8a953ee6f
 
 # Kernel Power Off Charging (KPOC)
 bin/kpoc_charger
